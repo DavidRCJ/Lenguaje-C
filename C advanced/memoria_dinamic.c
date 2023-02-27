@@ -9,6 +9,7 @@ int main()
     /*permite manejar la moria y utilizar la que que yo necesito*/
     int *memoria_empelados = (int *)malloc(500 * sizeof(int));
 
+    /**********************************************************************************/
     /****           Arrays dinamicos         *******/
     int numProductos = 5;
 
@@ -23,6 +24,18 @@ int main()
         scanf("%f", &numProductosvendidos[i]);
     }
 
-    /**/
+    /******************************************************************/
+
+    /*Libreacion de memoria*/
+    int *array = (int *)malloc(10*sizeof(int));
+    float *array2 = (float *)malloc(10*sizeof(float));
+    char *array3 = (char *)malloc(10*sizeof(char));
+    
+    /*Liberar meoria con free*/
+    
+    free(array);
+    free(array2);
+    free(array3);
+    
     return 0;
 }
